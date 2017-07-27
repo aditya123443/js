@@ -1,0 +1,35 @@
+<html>
+<head>
+<script> 
+	
+function  reverseString()
+{
+var d ;
+d = document.getElementById("txt1").value;
+var p='';
+var c='';
+for(var i=d.length-1;i>=0;i--)
+{
+	 
+	if(isNaN(d[i]))
+	{
+  p+=d[i];
+	}
+	else
+	{
+	 c+=d[i];
+	}
+ 
+}
+var ad= p +c;
+document.getElementById("demo").innerHTML=ad;
+}
+
+</script>
+<input id="txt1" >
+<button type="button" onclick=" reverseString()">Submit</button>
+<br>
+<br>
+<p id="demo"></p>
+</body>
+</html>
